@@ -20,10 +20,10 @@ const Navbar = () => {
       <nav className={`navigation-buttons ${isMenuOpen ? 'open' : ''}`}>
 
       <ScrollLink className="button" id="about" to="About" smooth={true} duration={500}>
-            OM MIG
+            ABOTE ME
         </ScrollLink>
           <ScrollLink className="button" id="projects" to="Project" smooth={true} duration={500}>
-            PROJEKT
+            PROJECTS
           </ScrollLink>
           <ScrollLink className="button" id="cv" to="Cv" smooth={true} duration={500}>
             CV
