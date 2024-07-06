@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../style/intro.css';
 import { NavLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -17,10 +18,17 @@ const Navbar = () => {
         <span className={`bar ${isMenuOpen ? 'rotate-backward' : ''}`}></span>
       </div>
       <nav className={`navigation-buttons ${isMenuOpen ? 'open' : ''}`}>
-        <button className="button" id="about">OM MIG</button>
-        <button className="button" id="projects">PROJEKT</button>
-        <button className="button" id="cv">CV</button>
-      <NavLink className="NavLink" id='english' to="/">SVENSKA</NavLink>
+
+      <ScrollLink className="button" id="about" to="About" smooth={true} duration={500}>
+            OM MIG
+        </ScrollLink>
+          <ScrollLink className="button" id="projects" to="Project" smooth={true} duration={500}>
+            PROJEKT
+          </ScrollLink>
+          <ScrollLink className="button" id="cv" to="Cv" smooth={true} duration={500}>
+            CV
+          </ScrollLink>
+          <NavLink className="button" id='english' to="/">SVENSKA</NavLink>
         
       </nav>
     </div>
