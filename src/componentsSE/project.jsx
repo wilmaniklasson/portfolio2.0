@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import './project.css';
+import '../style/project.css';
 import Note from '../assets/Note.svg';
 import Pokemon from '../assets/Pokemon.svg';
 import Hangman from '../assets/Hangman.svg';
 import Bättrewebb from '../assets/Bättrewebb.svg';
+import DivingDelights from '../assets/DivingDelights.svg';
 
 
 
@@ -13,6 +14,22 @@ const Project = () => {
             <section className='Projects'>
                 <h2>Några av mina Projekt</h2>
                 <div className='project-container'>
+
+                <div className='project'>
+                    <div className='project-image'>
+                        <a href="https://wilmaniklasson.github.io/Notes/" target="_blank" rel="noopener noreferrer">
+                            <img src={DivingDelights} alt="En bild på webbappen Notes" />
+                        </a>
+                    </div>
+                    <h3>Diving Delights</h3>
+                    <p>En webbshop med React, React Router (HashRouter), Zustand för state management och Firestore för datalagring.</p>
+                    <div className='button-container'>
+                        <a href="https://github.com/wilmaniklasson/Webbshop-divingdelights" target="_blank" rel="noopener noreferrer" className='show-more'>Repo</a>
+                        <a href="https://wilmaniklasson.github.io/Webbshop-divingdelights/" target="_blank" rel="noopener noreferrer" className='show-more'>Demo</a>
+
+                    </div>
+                </div>
+
                 <div className='project'>
                     <div className='project-image'>
                         <a href="https://wilmaniklasson.github.io/Notes/" target="_blank" rel="noopener noreferrer">

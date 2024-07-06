@@ -41,6 +41,19 @@
     border-radius: 5px;
     font-size: 1em;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+.NavLink {
+    text-decoration: none;
+    color: black;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #about {
@@ -251,6 +264,11 @@
         padding: 15px 30px;
         margin: 0 0 10px 0;
         width: 90%;
+    }
+    .NavLink {
+        padding: 15px 30px;
+        margin: 0 0 10px 0;
+        width: 74%;
     }
 
     #about {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './intro.css';
+import '../style/intro.css';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,8 @@ const Navbar = () => {
         <button className="button" id="about">OM MIG</button>
         <button className="button" id="projects">PROJEKT</button>
         <button className="button" id="cv">CV</button>
-        <button className="button" id="english">ENGLISH</button>
+      <NavLink className="NavLink" id='english' to="/">SVENSKA</NavLink>
+        
       </nav>
     </div>
   );
